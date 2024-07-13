@@ -1,0 +1,18 @@
+{
+    "name": "chat-app_server",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "build": "tsc ./server.ts --outDir build",
+      "start": "node ./build/server.js",
+      "start:dev": "npm run build && npm run start"
+    },
+    "dependencies": {
+      "ws": "^8.13.0"
+    },
+    "devDependencies": {
+      "@types/ws": "^8.5.10",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.5.3"
+    }
+  }
